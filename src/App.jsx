@@ -1,10 +1,16 @@
-import './App.scss';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Releases from "./pages/Releases/Releases";
+
+import "./App.scss";
 
 function App() {
   return (
-    <div>
-      <h1>Interzone Editions</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Releases />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
