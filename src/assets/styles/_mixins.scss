@@ -8,7 +8,7 @@
     color: $site-color;
 
     &:hover {
-        color: $site-color-light;
+        color: $white;
     }
 }
 
@@ -19,7 +19,6 @@
     border-radius: 20px;
     color: $site-color;
     cursor: pointer;
-    font-family: $primary-font-family;
     font-size: $text-lg;
     font-style: italic;
     height: 40px;
@@ -46,12 +45,12 @@
     border: none;
     border-bottom: 1px solid $site-color;
     padding: $space-md;
-    color: $site-color-light;
+    color: $white;
     appearance: none;
     font-size: $text-lg;
 
     &:hover {
-        border-color: $site-color-light;
+        border-color: $white;
     }
     &::placeholder {
         color: $site-color;
