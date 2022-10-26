@@ -26,6 +26,9 @@ body {
 */
 body {
   background-color: #000;
+  background-image: url("/assets/images/interzone-bg.jpeg");
+  background-position: center;
+  background-size: cover;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }

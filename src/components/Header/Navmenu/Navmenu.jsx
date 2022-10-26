@@ -15,28 +15,18 @@ const Navmenu = ({ menuOpen, toggleMenu }) => {
             </div>
             <ol className="navmenu__list">
                 <li className="navmenu__list-item">
-                    <Link onClick={toggleMenu} to="/">
-
-                    </Link>
-                </li>
-                <li className="navmenu__list-item">
-                    <Link onClick={toggleMenu} to="/odm">
-
-                    </Link>
-                </li>
-                <li className="navmenu__list-item">
-                    <Link onClick={toggleMenu} to="/interviews">
-
-                    </Link>
-                </li>
-                <li className="navmenu__list-item">
-                    <Link onClick={toggleMenu} to="/bodywork">
-
+                    <Link onClick={toggleMenu} to="/releases">
+                        Releases
                     </Link>
                 </li>
                 <li className="navmenu__list-item">
                     <Link onClick={toggleMenu} to="/about">
-
+                        About
+                    </Link>
+                </li>
+                <li className="navmenu__list-item">
+                    <Link onClick={toggleMenu} to="/subscribe">
+                        Subscribe
                     </Link>
                 </li>
             </ol>
