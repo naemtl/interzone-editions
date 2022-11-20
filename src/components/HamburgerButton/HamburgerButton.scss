@@ -49,4 +49,8 @@
     &__burger--open::after {
         opacity: 0;
     }
+
+    @media (min-width: 768px) {
+        display: none;
+    }
 }

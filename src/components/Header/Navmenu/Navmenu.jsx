@@ -8,11 +8,6 @@ const Navmenu = ({ menuOpen, toggleMenu }) => {
 
     return (
         <nav className={`navmenu ${menuOpen ? 'navmenu--open' : ''}`}>
-            <div className="navmenu__top">
-                {
-                    // do not delete this div
-                }
-            </div>
             <ol className="navmenu__list">
                 <li className="navmenu__list-item">
                     <Link onClick={toggleMenu} to="/releases">
