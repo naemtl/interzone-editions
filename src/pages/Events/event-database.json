@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "name": "A Terrible Beauty Is Born",
+        "date": "January 15, 2019",
+        "venue": "TurboHaus",
+        "posterUrl": "",
+        "artists": ["Dreamcrusher", "E-Saggila", "Death Kneel", "Soeur Acéphale", "La Naegleria", "OOPS'D"],
+        "vidUrls": [""],
+        "imgUrls": [""],
+        "credits": ["Poster: Andres Gourgues"]
+    },
+    {
+        "id": 2,
+        "name": "The Projection Of The True Body",
+        "date": "April 6, 2019",
+        "venue": "La Sala Rossa",
+        "posterUrl": "",
+        "artists": ["JS Aurelius", "Hogg", "Formal Sins", "Girl Circles", "Bena"],
+        "vidUrls": [""],
+        "imgUrls": [""],
+        "credits": ["Poster: Andres Gourgues"]
+    },
+    {
+        "id": 3,
+        "name": "All Have Taken Off Their Shirts Of Skins",
+        "date": "June 20, 2019",
+        "venue": "Casa Del Popolo",
+        "posterUrl": "",
+        "artists": ["Wetware", "Champagne Mirrors", "Beep Test", "Liar//Lier"],
+        "vidUrls": [""],
+        "imgUrls": [""],
+        "credits": ["Poster: Andres Gourgues"]
+    },
+    {
+        "id": 4,
+        "name": "Remnants Of What Once Was",
+        "date": "June 20, 2019",
+        "venue": "Casa Del Popolo",
+        "posterUrl": "",
+        "artists": ["Wetware", "Champagne Mirrors", "Beep Test", "Liar//Lier"],
+        "vidUrls": [""],
+        "imgUrls": [""],
+        "credits": ["Poster: Andres Gourgues"]
+    },
+    {
+        "id": 5,
+        "name": "Devenir Personne",
+        "date": "January 10, 2020",
+        "venue": "Durocher Basement",
+        "posterUrl": "",
+        "artists": ["Nate Young", "Jesse Osborne-Lanthier", "Container", "Alex Moskos Plays The New Style", "U.E", "Habib Bardi & Ghazi Bena"],
+        "vidUrls": [""],
+        "imgUrls": [""],
+        "credits": [
+            "Poster: Andres Gourgues",
+            "Premiering of Devenir Personne. A film by William Humphrey"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Transcendental Cuisine (The Glublthulunnubeth)",
+        "date": "April 29, 2022",
+        "venue": "La Sotterenea",
+        "posterUrl": "",
+        "artists": ["Nixtrove", "Stan K", "Wormhole of Doubt", "Myfanwy", "Matthew Raymond", "Neo Edo"],
+        "vidUrls": [""],
+        "imgUrls": [""],
+        "credits": [
+            "Poster: Arta Tajei"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Fragile Opening",
+        "date": "August 20, 2022",
+        "venue": "La Sala Rossa",
+        "posterUrl": "",
+        "artists": ["Orchestroll", "Amselysen + Racine", "Ana DM", "Myriam Bleau", "Worm Quartet"],
+        "vidUrls": [""],
+        "imgUrls": [""],
+        "credits": [
+            "Poster: Jules Galbraith"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Cantus (Non) Firmus",
+        "date": "February 18, 2023",
+        "venue": "Saint-Édouard Church",
+        "posterUrl": "",
+        "artists": ["Alex Zhang Hungtai", "Leila Bordreuil", "Leo Chang", "Yves Charuest"],
+        "vidUrls": [""],
+        "imgUrls": [""],
+        "credits": [
+            "Poster: Jesse Osborne-Lanthier"
+        ]
+    }
+]
