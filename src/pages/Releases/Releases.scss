@@ -4,7 +4,7 @@
     min-height: 100%;
 
     h1 {
-        color: white;
+        color: $white;
         text-align: center;
         margin: 10px;
     }
@@ -21,7 +21,7 @@
     }
 
     &__item {
-        background-color: white;
+        background-color: $white;
         cursor: pointer;
         height: 200px;
         width: 200px;
