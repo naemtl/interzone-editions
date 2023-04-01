@@ -4,6 +4,9 @@ import Header from "./components/Header/Header";
 
 import Homepage from "./pages/Homepage/Homepage";
 import Releases from "./pages/Releases/Releases";
+import Events from "./pages/Events/Events";
+import RadioShows from "./pages/RadioShows/RadioShows";
+
 
 import "./App.scss";
 
@@ -20,7 +23,16 @@ function App() {
           path="/releases"
           element={<Releases />}
         />
+        <Route
+          path="/events"
+          element={<Events />}
+        />
+        <Route
+          path="/radio-shows"
+          element={<RadioShows />}
+        />
       </Routes>
+      
     </BrowserRouter>
   );
 }
