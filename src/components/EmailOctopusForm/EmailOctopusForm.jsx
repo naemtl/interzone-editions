@@ -1,6 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 
+import styles from "./EmailOctopusForm.module.css";
+
 const EmailOctopusForm = () => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
@@ -26,20 +28,19 @@ const EmailOctopusForm = () => {
   };
 
   return (
-    <div>
-      <h2>Subscribe to Our Newsletter</h2>
+    <div className={styles.container}>
+      <h2>Become a member</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="email">Email:</label>
         <input
           type="email"
           name="email"
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Enter your email"
+          placeholder="Enter email address"
           required
         />
-        <button type="submit">Subscribe</button>
+        <button type="submit">Submit</button>
       </form>
       {status && <p>{status}</p>}
     </div>
