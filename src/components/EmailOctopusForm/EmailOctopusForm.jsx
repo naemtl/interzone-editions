@@ -17,7 +17,7 @@ const EmailOctopusForm = () => {
       });
       if (response.status === 200) {
         setStatus("Subscription successful!");
-        setEmail(""); // Reset the email field after successful submission
+        setEmail("");
       } else {
         setStatus("Failed to subscribe. Please try again.");
       }

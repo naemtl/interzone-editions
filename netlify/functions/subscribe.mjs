@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-exports.handler = async function (event, context) {
+export async function handler(event, context) {
   // Only allow POST requests
   if (event.httpMethod !== 'POST') {
     return {
@@ -13,7 +13,7 @@ exports.handler = async function (event, context) {
   const { email } = JSON.parse(event.body);
 
   // Define the EmailOctopus API endpoint and API key
-  const API_URL = `https://emailoctopus.com/lists/1a39cd28-7af0-11ef-a82c-77b26b012851`;
+  const API_URL = `https://emailoctopus.com/api/1.6/lists/1a39cd28-7af0-11ef-a82c-77b26b012851/contacts`;
   const API_KEY = process.env.EMAIL_OCTOPUS_API_KEY; // The API key from Netlify environment variables
 
   // Prepare the data to send to EmailOctopus
@@ -23,8 +23,12 @@ exports.handler = async function (event, context) {
   };
 
   try {
-    // Send POST request to EmailOctopus API
-    const response = await axios.post(API_URL, data);
+    const response = await axios.post(API_URL, data, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${API_KEY}`
+      }
+    });
 
     if (response.status === 200) {
       return {
