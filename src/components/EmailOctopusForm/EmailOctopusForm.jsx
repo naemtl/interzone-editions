@@ -30,7 +30,7 @@ const EmailOctopusForm = () => {
   return (
     <div className={styles.container}>
       <h2>Become a member</h2>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <input
           type="email"
           name="email"

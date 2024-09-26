@@ -4,11 +4,15 @@
     align-items: center;
     justify-content: center;
 }
+.form {
+    display: flex;
+    flex-direction: column;
+    
+    button {
+        cursor: pointer;
+    }
+}
 
 h2 {
     margin-bottom: 10px;
-}
-
-button {
-    cursor: pointer;
 }
