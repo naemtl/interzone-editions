@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 export async function handler(event, context) {
-  // Only allow POST requests
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 405,
@@ -9,14 +8,11 @@ export async function handler(event, context) {
     };
   }
 
-  // Get the email from the request body
   const { email } = JSON.parse(event.body);
 
-  // Define the EmailOctopus API endpoint and API key
   const API_URL = `https://emailoctopus.com/api/1.6/lists/1a39cd28-7af0-11ef-a82c-77b26b012851/contacts`;
-  const API_KEY = process.env.EMAIL_OCTOPUS_API_KEY; // The API key from Netlify environment variables
+  const API_KEY = process.env.EMAIL_OCTOPUS_API_KEY;
 
-  // Prepare the data to send to EmailOctopus
   const data = {
     email_address: email,
     api_key: API_KEY,
@@ -33,12 +29,12 @@ export async function handler(event, context) {
     if (response.status === 200) {
       return {
         statusCode: 200,
-        body: JSON.stringify({ message: 'Subscription successful!' }),
+        body: JSON.stringify({ message: "Success! We'll be in touch." }),
       };
     } else {
       return {
         statusCode: 400,
-        body: JSON.stringify({ message: 'Subscription failed. Please try again.' }),
+        body: JSON.stringify({ message: 'Something went wrong. Please try again.' }),
       };
     }
   } catch (error) {

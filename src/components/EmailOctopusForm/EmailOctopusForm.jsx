@@ -16,14 +16,14 @@ const EmailOctopusForm = () => {
         email,
       });
       if (response.status === 200) {
-        setStatus("Subscription successful!");
+        setStatus("Success! We'll be in touch.");
         setEmail("");
       } else {
-        setStatus("Failed to subscribe. Please try again.");
+        setStatus("Something went wrong. Please try again.");
       }
     } catch (error) {
       console.error("Subscription error:", error);
-      setStatus("Failed to subscribe. Please try again.");
+      setStatus("Something went wrong. Please try again.");
     }
   };
 
@@ -42,7 +42,7 @@ const EmailOctopusForm = () => {
         />
         <button type="submit">Submit</button>
       </form>
-      {status && <p>{status}</p>}
+      {status && <p className={styles.status}>{status}</p>}
     </div>
   );
 };
