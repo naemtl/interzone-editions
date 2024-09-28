@@ -29,12 +29,12 @@ export async function handler(event, context) {
     if (response.status === 200) {
       return {
         statusCode: 200,
-        body: JSON.stringify({ message: "Success! We'll be in touch." }),
+        body: JSON.stringify({ message: 'Subscription successful!' }),
       };
     } else {
       return {
         statusCode: 400,
-        body: JSON.stringify({ message: 'Something went wrong. Please try again.' }),
+        body: JSON.stringify({ message: 'Subscription failed. Please try again.' }),
       };
     }
   } catch (error) {

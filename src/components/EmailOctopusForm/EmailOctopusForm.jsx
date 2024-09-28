@@ -16,20 +16,20 @@ const EmailOctopusForm = () => {
         email,
       });
       if (response.status === 200) {
-        setStatus("Success! We'll be in touch.");
+        setStatus("Subscription successful!");
         setEmail("");
       } else {
-        setStatus("Something went wrong. Please try again.");
+        setStatus("Subscription error. Please try again.");
       }
     } catch (error) {
       console.error("Subscription error:", error);
-      setStatus("Something went wrong. Please try again.");
+      setStatus("Subscription error. Please try again.");
     }
   };
 
   return (
     <div className={styles.container}>
-      <h2>Become a member</h2>
+      <h2>Join our mailing list</h2>
       <form className={styles.form} onSubmit={handleSubmit}>
         <input
           type="email"

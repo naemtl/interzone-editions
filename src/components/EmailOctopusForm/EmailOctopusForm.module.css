@@ -10,6 +10,8 @@
     
     button {
         cursor: pointer;
+        border-radius: initial;
+        background-color: #efefef;
     }
 }
 
