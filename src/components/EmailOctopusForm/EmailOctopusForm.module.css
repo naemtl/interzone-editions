@@ -9,9 +9,10 @@
     flex-direction: column;
     
     button {
-        cursor: pointer;
-        border-radius: initial;
         background-color: #efefef;
+        border-radius: initial;
+        color: #000;
+        cursor: pointer;
     }
 }
 
